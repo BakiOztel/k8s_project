@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: readlist-all-global
+subjects:
+  - kind: Group
+    name: Senior
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: clusterseniorrole
+  apiGroup: rbac.authorization.k8s.io

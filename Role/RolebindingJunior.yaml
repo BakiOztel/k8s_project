@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: readlistproduction
+  namespace: default
+subjects:
+  - kind: Group
+    name: Junior
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: juniorrole
+  apiGroup: rbac.authorization.k8s.io

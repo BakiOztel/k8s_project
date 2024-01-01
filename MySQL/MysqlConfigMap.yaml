@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysqlenv
+  namespace: test
+data:
+  MYSQL_DATABASE: mysql
+  MYSQL_ROOT_PASSWORD: deneme
+  MYSQL_USER: deneme
+  MYSQL_PASSWORD: deneme
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysqlenv
+  namespace: production
+data:
+  MYSQL_DATABASE: mysql
+  MYSQL_ROOT_PASSWORD: deneme
+  MYSQL_USER: deneme
+  MYSQL_PASSWORD: deneme
